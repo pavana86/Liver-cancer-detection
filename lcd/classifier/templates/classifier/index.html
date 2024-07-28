@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liver Cancer Detection</title>
+</head>
+<body>
+    <h1>Upload Histopathology Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Classify</button>
+    </form>
+</body>
+</html>
